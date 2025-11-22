@@ -38,11 +38,11 @@ export const Canvas = forwardRef<HTMLDivElement, CanvasProps>(({ state }, ref) =
         >
             {/* Header Image */}
             {headerImage && (
-                <div style={{ width: '100%', flexShrink: 0 }}>
+                <div style={{ width: '100%', flexShrink: 0, maxHeight: `${height * 0.25}px`, overflow: 'hidden' }}>
                     <img
                         src={headerImage}
                         alt="Header"
-                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                        style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
                     />
                 </div>
             )}
@@ -75,11 +75,11 @@ export const Canvas = forwardRef<HTMLDivElement, CanvasProps>(({ state }, ref) =
 
             {/* Footer Image */}
             {footerImage && (
-                <div style={{ width: '100%', flexShrink: 0 }}>
+                <div style={{ width: '100%', flexShrink: 0, maxHeight: `${height * 0.25}px`, overflow: 'hidden' }}>
                     <img
                         src={footerImage}
                         alt="Footer"
-                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                        style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
                     />
                 </div>
             )}
