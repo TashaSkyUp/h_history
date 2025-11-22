@@ -5,14 +5,16 @@ import { Controls } from './components/ImageGenerator/Controls';
 import { Toolbar } from './components/ImageGenerator/Toolbar';
 import type { GeneratorState, TextStyles } from './components/ImageGenerator/types';
 import { DEFAULT_STYLES } from './components/ImageGenerator/types';
+import defaultHeaderImage from '/default_header.png';
 import './App.css';
 
 function App() {
   const canvasRef = useRef<HTMLDivElement>(null);
   const [isGenerating, setIsGenerating] = useState(false);
 
+
   const [state, setState] = useState<GeneratorState>({
-    headerImage: '/default_header.png',
+    headerImage: defaultHeaderImage,
     footerImage: null, // User can upload or we can add a default later
     text: 'Welcome to the Huerfano County History Project\n\nCreate your own social media posts to share local stories.',
     styles: { ...DEFAULT_STYLES },
@@ -32,7 +34,7 @@ function App() {
 
   const handleReset = () => {
     setState({
-      headerImage: '/default_header.png',
+      headerImage: defaultHeaderImage,
       footerImage: null,
       text: 'Welcome to the Huerfano County History Project\n\nCreate your own social media posts to share local stories.',
       styles: { ...DEFAULT_STYLES },
