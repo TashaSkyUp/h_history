@@ -1,5 +1,5 @@
-import React, { forwardRef } from 'react';
-import { GeneratorState } from './types';
+import { forwardRef } from 'react';
+import type { GeneratorState } from './types';
 
 interface CanvasProps {
     state: GeneratorState;

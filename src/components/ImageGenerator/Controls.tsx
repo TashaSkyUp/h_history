@@ -1,5 +1,5 @@
 import React from 'react';
-import { GeneratorState, TextStyles } from './types';
+import type { GeneratorState, TextStyles } from './types';
 import { Upload, Type, Palette, Layout, Image as ImageIcon } from 'lucide-react';
 
 interface ControlsProps {

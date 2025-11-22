@@ -1,9 +1,10 @@
-import React, { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { toPng } from 'html-to-image';
 import { Canvas } from './components/ImageGenerator/Canvas';
 import { Controls } from './components/ImageGenerator/Controls';
 import { Toolbar } from './components/ImageGenerator/Toolbar';
-import { GeneratorState, DEFAULT_STYLES, TextStyles } from './components/ImageGenerator/types';
+import type { GeneratorState, TextStyles } from './components/ImageGenerator/types';
+import { DEFAULT_STYLES } from './components/ImageGenerator/types';
 import './App.css';
 
 function App() {
